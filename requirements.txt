@@ -1,0 +1,8 @@
+torch
+torchvision
+torchattacks
+numpy
+matplotlib
+pytest
+fastapi
+uvicorn
