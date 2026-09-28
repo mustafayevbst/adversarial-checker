@@ -11,6 +11,9 @@ __pycache__/
 *.pt
 *.h5
 
+# Пример атаки
+attack_example.png
+
 # Настройки IDE
 .idea/
 .vscode/
