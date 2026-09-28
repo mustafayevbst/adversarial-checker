@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
+import os
 
 from dataset import get_mnist_loaders
 from model import SimpleCNN
@@ -59,7 +60,8 @@ def main():
         print(f"Epoch {epoch}: train_loss={train_loss:.4f}, train_acc={train_acc:.4f}, "
               f"test_loss={test_loss:.4f}, test_acc={test_acc:.4f}")
 
-    torch.save(model.state_dict(), "model.pth")
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    torch.save(model.state_dict(), os.path.join(BASE_DIR, "model.pth"))
     print("Saved model to model.pth")
 
 
