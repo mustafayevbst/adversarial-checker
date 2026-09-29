@@ -57,7 +57,7 @@ def main():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    train_loader, test_loader = get_mnist_loaders(batch_size=32)
+    train_loader, test_loader = get_mnist_loaders(batch_size=64)
 
     model = SimpleCNN().to(device)
     criterion = nn.CrossEntropyLoss()
