@@ -17,24 +17,31 @@
 
 1. Клонируй репозиторий:
 
-    git clone https://github.com/mustafayevbst/adversarial-checker.git
-    cd adversarial-checker
+```bash
+   git clone https://github.com/mustafayevbst/adversarial-checker.git
+   cd adversarial-checker
+```
 
 2. Создай venv и установи зависимости:
 
-    python -m venv venv
-    venv\Scripts\activate
-    pip install -r requirements.txt
+```bash
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+```
 
 3. Обучи модели:
 
-    python train.py
-    python train_adv.py
+```bash
+   python train.py
+   python train_adv.py
+```
 
 4. Проверь устойчивость:
 
-    python check.py --model model.pth --attack fgsm
-
+```bash
+   python check.py --model model.pth --attack fgsm
+```
 ## Использование CLI
 
     # Чистая точность (без атаки)
